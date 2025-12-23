@@ -170,7 +170,7 @@ export default function App() {
           },
           {
             img: "/sla.png",
-            title: "IT Vendor SLA Monitoring System (In Development)",
+            title: "IT Vendor SLA Monitoring System         (In Development)",
             desc: "System to track vendor performance, SLA compliance, dashboards and alerts.",
           },
         ].map((p, i) => (
