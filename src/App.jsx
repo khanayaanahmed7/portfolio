@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./index.css";
+import { useState } from "react";
 import { li, line, link } from "framer-motion/client";
 
 const section = {
@@ -12,6 +13,7 @@ const section = {
 };
 
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const certificates = [
     {
       img: "/cert1.png",
@@ -56,10 +58,50 @@ export default function App() {
   ];
 
   return (
+    <>
+    {/* NAVBAR */}
+    <nav className="navbar">
+      <div className="nav-left">
+        Ayaan Ahmed Anwar Khan
+      </div>
+
+      {/* Desktop Links */}
+      <div className="nav-right desktop">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#languages">Languages</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="/public/Resume.pdf" target="_blank">View Resume</a>
+        <a href="/public/Resume.pdf" download className="download-btn">Download CV</a>
+      </div>
+
+      {/* Hamburger */}
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </div>
+
+      {/* Mobile Menu */}
+      <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+        <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+        <a href="#education" onClick={() => setMenuOpen(false)}>Education</a>
+        <a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a>
+        <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
+        <a href="#languages" onClick={() => setMenuOpen(false)}>Languages</a>
+        <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
+        <a href="#certifications" onClick={() => setMenuOpen(false)}>Certifications</a>
+        <a href="/public/Resume.pdf" target="_blank">View Resume</a>
+        <a href="/public/Resume.pdf" download className="download-btn">Download CV</a>
+      </div>
+    </nav>
+
     <div className="app-container">
 
       {/* HERO */}
       <motion.section
+        id="about"
         variants={section}
         initial="hidden"
         whileInView="visible"
@@ -85,7 +127,7 @@ export default function App() {
       </motion.section>
 
       {/* EDUCATION */}
-      <motion.section variants={section} initial="hidden" whileInView="visible" className="section dark">
+      <motion.section id="education" variants={section} initial="hidden" whileInView="visible" className="section dark">
         <h2>Education</h2>
         <div className="timeline">
           <div>
@@ -107,7 +149,7 @@ export default function App() {
       </motion.section>
 
       {/* EXPERIENCE */}
-      <motion.section variants={section} initial="hidden" whileInView="visible" className="section">
+      <motion.section id="experience" variants={section} initial="hidden" whileInView="visible" className="section">
         <h2>Experience</h2>
         <p className="section-text">
           Fresher with hands-on experience through academic and self-driven
@@ -117,7 +159,7 @@ export default function App() {
       </motion.section>
 
       {/* SKILLS */}
-      <motion.section variants={section} initial="hidden" whileInView="visible" className="section dark">
+      <motion.section id="skills" variants={section} initial="hidden" whileInView="visible" className="section dark">
         <h2>Skills</h2>
         <div className="skills-grid">
           <div className="skill-card">
@@ -148,13 +190,13 @@ export default function App() {
       </motion.section>
 
       {/* LANGUAGES */}
-      <motion.section variants={section} initial="hidden" whileInView="visible" className="section">
+      <motion.section id="languages" variants={section} initial="hidden" whileInView="visible" className="section">
         <h2>Languages Known</h2>
         <p className="section-text">English • Hindi • Urdu</p>
       </motion.section>
 
       {/* PROJECTS */}
-      <motion.section variants={section} initial="hidden" whileInView="visible" className="section dark">
+      <motion.section id="projects" variants={section} initial="hidden" whileInView="visible" className="section dark">
         <h2>Projects</h2>
 
         {[
@@ -186,7 +228,7 @@ export default function App() {
       </motion.section>
 
       {/* CERTIFICATIONS */}
-      <motion.section variants={section} initial="hidden" whileInView="visible" className="section">
+      <motion.section id="certifications" variants={section} initial="hidden" whileInView="visible" className="section">
         <h2>Certifications</h2>
 
         {certificates.map((c, i) => (
@@ -205,5 +247,7 @@ export default function App() {
         © {new Date().getFullYear()} Ayaan Ahmed Anwar Khan · Built with React & Framer Motion
       </footer>
     </div>
+    </>
+    
   );
 }
