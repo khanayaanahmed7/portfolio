@@ -74,8 +74,8 @@ export default function App() {
         <a href="#languages">Languages</a>
         <a href="#projects">Projects</a>
         <a href="#certifications">Certifications</a>
-        <a href="/Resume.pdf" target="_blank">View Resume</a>
-        <a href="/Resume.pdf" download className="download-btn">Download CV</a>
+        <a href="/AyaanAhmed_Resume.pdf" target="_blank">View Resume</a>
+        <a href="/AyaanAhmed_Resume.pdf" download="AyaanAhmed_Resume" className="download-btn">Download CV</a>
       </div>
 
       {/* Hamburger */}
@@ -92,8 +92,8 @@ export default function App() {
         <a href="#languages" onClick={() => setMenuOpen(false)}>Languages</a>
         <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
         <a href="#certifications" onClick={() => setMenuOpen(false)}>Certifications</a>
-        <a href="/Resume.pdf" target="_blank">View Resume</a>
-        <a href="/Resume.pdf" download className="download-btn">Download CV</a>
+        <a href="/AyaanAhmed_Resume.pdf" target="_blank">View Resume</a>
+        <a href="/AyaanAhmed_Resume.pdf" download="AyaanAhmed_Resume" className="download-btn">Download CV</a>
       </div>
     </nav>
 
