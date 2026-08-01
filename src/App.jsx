@@ -135,7 +135,7 @@ export default function App() {
           </a>
 
           <a
-            href="linkedin.com/in/ayaan-ahmed-khan"
+            href="https://www.linkedin.com/in/ayaan-ahmed-khan/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6pg9aMbYTsWORDYxQy89ug%3D%3D"
             target="_blank"
             rel="noreferrer"
           >
