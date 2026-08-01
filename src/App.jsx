@@ -116,13 +116,31 @@ export default function App() {
 
         <div className="hero-text">
           <h1>Ayaan Ahmed Anwar Khan</h1>
-          <h3>Full Stack Web Developer | B.Sc Computer Science</h3>
+          <h3>Aspiring QA Engineer & Full Stack Developer</h3>
           <p>
-            Passionate Computer Science student pursuing B.Sc (2023–2026) from
-            Universal MSG-SGKM College. Focused on building scalable full-stack
-            applications, AI-assisted platforms and modern web solutions with
-            clean UI/UX.
+            Motivated and detail-oriented Computer Science graduate with hands-on
+            experience in full-stack web development, manual testing, and AI-powered
+            applications. Passionate about building scalable, user-friendly solutions
+            using modern technologies while continuously enhancing technical expertise.
           </p>
+        </div>
+
+        <div className="hero-contact">
+          <a href="mailto:khanayaanahmed07@gmail.com">
+            📧 khanayaanahmed07@gmail.com
+          </a>
+
+          <a href="tel:+918928600074">
+            📱 +91 8928600074
+          </a>
+
+          <a
+            href="https://portfolio-ayaanahmed-khan.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            🌐 Portfolio
+          </a>
         </div>
       </motion.section>
 
@@ -133,7 +151,7 @@ export default function App() {
           <div>
             <h4>B.Sc Computer Science</h4>
             <p>Universal MSG-SGKM College of Arts, Science & Commerce</p>
-            <span>2023 – 2026 (Pursuing)</span>
+            <span>2023 – 2026 | Final CGPA: 8.98</span>
           </div>
           <div>
             <h4>HSC – Maharashtra Board</h4>
@@ -152,9 +170,10 @@ export default function App() {
       <motion.section id="experience" variants={section} initial="hidden" whileInView="visible" className="section">
         <h2>Experience</h2>
         <p className="section-text">
-          Fresher with hands-on experience through academic and self-driven
-          projects. Worked on frontend interfaces, backend logic, authentication,
-          databases and AI-based matching systems.
+          Fresher with practical experience gained through academic and collaborative
+          projects. Worked on frontend development, backend integration,
+          authentication, databases, AI-powered applications, and basic software
+          testing concepts.
         </p>
       </motion.section>
 
@@ -165,25 +184,31 @@ export default function App() {
           <div className="skill-card">
             <h4>Technical Skills</h4>
             <ul>
-              <li>HTML, CSS, JavaScript</li>
-              <li>React.js, Node.js</li>
-              <li>Python</li>
-              <li>MongoDB, Firebase</li>
+              <li>Manual Testing</li>
+              <li>SDLC & STLC</li>
+              <li>SQL (Basic) & Python (Basic)</li>
+              <li>HTML5, CSS3 & JavaScript</li>
+              <li>React.js & Node.js</li>
+              <li>MongoDB & Firebase</li>
+              <li>Git & Github</li>
             </ul>
           </div>
           <div className="skill-card">
             <h4>Computer Skills</h4>
             <ul>
-              <li>MS Word, Excel, PowerPoint</li>
-              <li>Typing & Data Entry</li>
+              <li>MS Office</li>
+              <li>Windows</li>
+              <li>Internet & Email</li>
             </ul>
           </div>
           <div className="skill-card">
             <h4>Soft Skills</h4>
             <ul>
+              <li>Problem Solving</li>
               <li>Communication</li>
               <li>Teamwork</li>
-              <li>Problem Solving</li>
+              <li>Analytical Thinking</li>
+              <li>Attention to Detail</li>
             </ul>
           </div>
         </div>
@@ -202,18 +227,18 @@ export default function App() {
         {[
           {
             img: "/attireyard.png",
-            title: "E-Commerce Website",
-            desc: "A modern e-commerce platform with authentication, email handling and scalable frontend architecture.",
+            title: "E-Commerce Website (Collaborative Project - 2 Members)",
+            desc: "Frontend-focused e-commerce platform with user registration, login, email handling, responsive UI and scalable architecture.",
           },
           {
             img: "/skillwork.png",
             title: "Skill-Based Freelancing Platform",
-            desc: "AI-powered freelancing platform that intelligently matches freelancers with client requirements.",
+            desc: "AI-powered freelancing platform that intelligently matches freelancers with client requirements using modern web technologies.",
           },
           {
             img: "/sla.png",
-            title: "IT Vendor SLA Monitoring System         (In Development)",
-            desc: "System to track vendor performance, SLA compliance, dashboards and alerts.",
+            title: "IT Vendor SLA Monitoring System",
+            desc: "Vendor performance monitoring system with SLA tracking, dashboards, reports and alert management.",
           },
         ].map((p, i) => (
           <div className="project-card" key={i}>
@@ -244,7 +269,7 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="footer">
-        © {new Date().getFullYear()} Ayaan Ahmed Anwar Khan · Built with React & Framer Motion
+        © {new Date().getFullYear()} Ayaan Ahmed Anwar Khan | Built with React & Framer Motion
       </footer>
     </div>
     </>
