@@ -135,11 +135,11 @@ export default function App() {
           </a>
 
           <a
-            href="https://portfolio-ayaanahmed-khan.vercel.app"
+            href="linkedin.com/in/ayaan-ahmed-khan"
             target="_blank"
             rel="noreferrer"
           >
-            🌐 Portfolio
+            🌐 Linkedin
           </a>
         </div>
       </motion.section>
