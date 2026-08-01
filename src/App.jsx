@@ -236,7 +236,7 @@ export default function App() {
             desc: "AI-powered freelancing platform that intelligently matches freelancers with client requirements using modern web technologies.",
           },
           {
-            img: "/sla.png",
+            img: "/SLA Monitor.png",
             title: "IT Vendor SLA Monitoring System",
             desc: "Vendor performance monitoring system with SLA tracking, dashboards, reports and alert management.",
           },
